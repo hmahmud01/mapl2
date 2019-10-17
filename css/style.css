@@ -434,8 +434,88 @@ input {
 /* clients page style */
 .clients {
     position: absolute;
+    width: 100%;
     top: 3%;
     left: 5%;
     margin: 30px 20px;
     color: white;
 }
+
+.clients-content {
+    color: black;
+}
+
+.logo-size {
+    height: 72px;
+    margin: 20px;
+}
+
+
+/* work page */
+.bordered.square {
+    height: 150px;
+    width: 150px;
+}
+.bordered.rectangle {
+    height: 150px;
+    width: 250px;
+}
+.bordered {
+    background-color: beige;
+    background-image: linear-gradient(to right, black 30px, transparent 30px), linear-gradient(to right, black 30px, transparent 30px), linear-gradient(to bottom, black 30px, transparent 30px), linear-gradient(to bottom, black 30px, transparent 30px);
+    background-size: 100% 5px, 100% 5px, 5px 100%, 5px 100%;
+    background-position: -15px 0%, -15px 100%, 0% -15px, 100% -15px;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+}
+
+/* border solution */
+
+.work {
+    position: absolute;
+    width: 100%;
+    top: 3%;
+    /* left: 5%; */
+    margin: 30px 20px;
+    /* color: white; */
+    padding: 50px;
+}
+
+.work-underline {
+    border: 1px solid gray;
+}
+
+.work-img{
+    width: 350px;
+    margin: 15px 5px;
+}
+
+.btn-work{
+    /* color: rgba(9, 9, 56, 0.418) */
+    background-color: rgba(3, 3, 94, 0.8);
+    color: white !important;
+}
+
+.border-1 {
+    position:absolute;
+    top:15%;
+    left:30%;
+    height:227px;
+    width:380px;
+    background-color:white;
+    border:1px solid black;
+}
+
+.border-2 {
+    position:relative;
+    top:-1px;
+    left:-1px;
+    height:229px;
+    width:382px;
+    background-color:white;
+    border-radius: 15px;
+}
+
+.vertical-line {
+    border-left: 3px solid rgb(102, 157, 221);
+    height: 375px;
+  }
