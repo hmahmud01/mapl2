@@ -286,13 +286,26 @@ nav ul li:hover a span {
 }
 
 .story-para{
-    padding-top: 120px;
+    padding-top: 130px;
+    text-align: justify
 }
 
 .home-back{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.video-back{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animateBg forwards 15s ease-in;
+}
+
+@keyframes animateBg {
+    from { background-size: 100%; }
+    to { background-size: 110%; }
 }
 
 .underline {
