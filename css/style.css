@@ -296,6 +296,31 @@ nav ul li:hover a span {
     background-size: cover;
 }
 
+.btn-space{
+    margin: 0 5px;
+}
+
+.portfolio-back{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90% !important;
+}
+
+.portfolio-head{
+    float: left;
+    margin: 0 30px;
+}
+
+.portfolio-content{
+    width: 100%;
+    padding-top: 220px;
+}
+
+.portfolio-footer {
+    margin: 10px;
+}
+
 .video-back{
     background-position: center;
     background-repeat: no-repeat;
@@ -373,6 +398,7 @@ input {
     outline: 0;
     background: transparent;
     border-bottom: 2px solid white;
+    color: white;
     /* width: 20px; */
 }
 
