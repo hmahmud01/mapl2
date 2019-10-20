@@ -414,10 +414,11 @@ input {
 .expert{
     position: absolute;
     top: 3%;
-    left: 15%;
+    left: 3%;
     margin: 30px 20px;
     justify-content: right;
     align-items: center;
+    width: 95%;
 }
 
 .service-img {
@@ -427,7 +428,8 @@ input {
 
 .hex-content {
     position: relative;
-    left: 30%;
+    /* left: 30%; */
+    width: 65%;
 }
 
 
@@ -472,12 +474,12 @@ input {
 
 .work {
     position: absolute;
-    width: 100%;
+    /* width: 100%; */
     top: 3%;
     /* left: 5%; */
-    margin: 30px 20px;
+    /* margin: 10px 20px; */
     /* color: white; */
-    padding: 50px;
+    padding: 20px 50px;
 }
 
 .work-underline {

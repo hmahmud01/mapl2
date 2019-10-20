@@ -71,28 +71,31 @@ var Pageable = function() {
                 wheel: this.wheel.bind(this),
                 update: utils.throttle(this.update.bind(this), this.config.throttle),
                 load: this.load.bind(this)
-            }, window.addEventListener("wheel", this.callbacks.wheel, !1), window.addEventListener("resize", this.callbacks.update, !1), this.down = !1, window.addEventListener("mousedown", function(m) {
-                return !!m.target.closest("[data-anchor]") && void(m.preventDefault(), j.down = {
-                    x: m.pageX,
-                    y: m.pageY
-                }, j.config.onBeforeStart.call(j, j.pages[j.index].id))
-            }, !1);
+            }, window.addEventListener("wheel", this.callbacks.wheel, !1), window.addEventListener("resize", this.callbacks.update, !1), this.down = !1; 
+            // window.addEventListener("mousedown", function(m) {
+            //     return !!m.target.closest("[data-anchor]") && void(m.preventDefault(), j.down = {
+            //         x: m.pageX,
+            //         y: m.pageY
+            //     }, j.config.onBeforeStart.call(j, j.pages[j.index].id))
+            // }, !1)
+            // ;
             var k = function() {
                     return j.index < j.pages.length - 1 && j.index++
                 },
                 l = function() {
                     return 0 < j.index && j.index--
                 };
-            window.addEventListener("mouseup", function(m) {
-                if (j.down && !j.scrolling) {
-                    var n = j.index;
-                    m[j.mouseAxis[j.axis]] < j.down[j.axis] ? 1 === m.button ? l() : k() : m[j.mouseAxis[j.axis]] > j.down[j.axis] && (1 === m.button ? k() : l()), n === j.index ? j.config.onFinish.call(j, {
-                        hash: j.pages[j.index].id,
-                        page: j.index + 1,
-                        index: j.index
-                    }) : j.scrollBy(j.getScrollAmount(n)), j.down = !1
-                }
-            }, !1), document.addEventListener("DOMContentLoaded", this.callbacks.load, !1), document.addEventListener("click", function(m) {
+            // window.addEventListener("mouseup", function(m) {
+            //     if (j.down && !j.scrolling) {
+            //         var n = j.index;
+            //         m[j.mouseAxis[j.axis]] < j.down[j.axis] ? 1 === m.button ? l() : k() : m[j.mouseAxis[j.axis]] > j.down[j.axis] && (1 === m.button ? k() : l()), n === j.index ? j.config.onFinish.call(j, {
+            //             hash: j.pages[j.index].id,
+            //             page: j.index + 1,
+            //             index: j.index
+            //         }) : j.scrollBy(j.getScrollAmount(n)), j.down = !1
+            //     }
+            // }, !1), 
+            document.addEventListener("DOMContentLoaded", this.callbacks.load, !1), document.addEventListener("click", function(m) {
                 var n = m.target,
                     o = n.closest("a");
                 o && -1 < j.anchors.indexOf(o.hash) && (m.preventDefault(), j.scrollToAnchor(o.hash))
