@@ -412,15 +412,15 @@ input {
 
 .brand-b1 {
     position: absolute;
-    /* top: 2%; */
+    top: 2%;
     background-color: rgba(187, 187, 187, 0.15);
-    /* width: 880px;
-    height: 520px; */
-    top: 50%;
+    width: 880px;
+    height: 520px;
+    /* top: 50%;
     left: 50%;
     height: 55%;
-    width: 50%;
-    margin: -15% 0 0 -25%;
+    width: 50%; */
+    /* margin: -15% 0 0 -25%; */
     box-shadow: 0 0 10px gray;
     
 }
