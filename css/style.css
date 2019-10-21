@@ -418,7 +418,13 @@ input {
     background-color: rgba(187, 187, 187, 0.15);
     width: 880px;
     height: 520px;
+    /* top: 50%;
+    left: 50%;
+    height: 55%;
+    width: 50%; */
+    /* margin: -15% 0 0 -25%; */
     box-shadow: 0 0 10px gray;
+    
 }
 
 .brand-b2 {
@@ -426,7 +432,7 @@ input {
     background-color: white;
     width: 480px;
     height: 480px;
-    margin: 20px 200px;
+    margin: 20px 230px;
     text-align: center;
     padding: 60px 0;
     box-shadow: 0 0 20px gray;
