@@ -282,7 +282,8 @@ nav ul li:hover a span {
 
 /* Story page css */
 .story-content{    
-    margin: 30px 50px;
+    margin: 100px 50px 0 50px;
+    padding: 50px;
 }
 
 .story-para{
@@ -310,6 +311,7 @@ nav ul li:hover a span {
 .portfolio-head{
     float: left;
     margin: 0 30px;
+    width: 100%;
 }
 
 .portfolio-content{
@@ -458,6 +460,14 @@ input {
     justify-content: right;
     align-items: center;
     width: 95%;
+}
+
+.clients-content {
+    margin-left: -150px;
+    padding: 30px 50px;
+}
+.content{
+    padding: 0 50px 0 100px;
 }
 
 .service-img {

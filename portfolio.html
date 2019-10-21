@@ -32,15 +32,62 @@
 			<div class="text portfolio-back" style="background-image: url('img/contents/portfolio.jpg');">
 				<div class="story-content">
                     <div class="portfolio-head">
-                        <h2>PORTFOLIO</h2>    
-                        <span class="btn-space"><button class="btn btn-outline-light btn-sm">EVENTS</button></span>
-                        <span class="btn-space"><button class="btn btn-outline-light btn-sm">ACTIVITION</button></span>
-                        <span class="btn-space"><button class="btn btn-outline-light btn-sm">REALITY SHOW</button></span>
-                        <span class="btn-space"><button class="btn btn-outline-light btn-sm">CAMPAIGN</button></span>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <h2 style="color:white">PORTFOLIO</h2>    
+                                <div id="filters">
+                                    <span class="btn-space"><button class="btn btn-outline-light btn-sm is-checked" data-filter=".events">EVENTS</button></span>
+                                    <span class="btn-space"><button class="btn btn-outline-light btn-sm" data-filter=".act">ACTIVITION</button></span>
+                                    <span class="btn-space"><button class="btn btn-outline-light btn-sm" data-filter=".real">REALITY SHOW</button></span>
+                                    <span class="btn-space"><button class="btn btn-outline-light btn-sm" data-filter=".camp">CAMPAIGN</button></span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <button onclick="goToIndex()" class="btn btn-work btn-sm">Back To Home</button>
+                            </div>
+                        </div>
+                        
                     </div>
 
 
 					<div class="portfolio-content">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col-md-3 grid-item events">
+                                    <div class="card">
+                                        <img class="card-img-top" src="img/contents/portfolio.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="card-text" style="font-size:8px;">Project Name: Lux Channel I Super Star 2006.<br> Client Name: Unilever Bangladesh Limited</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 grid-item events">
+                                    <div class="card">
+                                        <img class="card-img-top" src="img/contents/portfolio.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="card-text" style="font-size:8px;">Project Name: Lux Channel I Super Star 2006.<br> Client Name: Unilever Bangladesh Limited</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 grid-item events">
+                                    <div class="card">
+                                        <img class="card-img-top" src="img/contents/portfolio.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="card-text" style="font-size:8px;">Project Name: Lux Channel I Super Star 2006.<br> Client Name: Unilever Bangladesh Limited</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 grid-item events">
+                                    <div class="card">
+                                        <img class="card-img-top" src="img/contents/portfolio.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="card-text" style="font-size:8px;">Project Name: Lux Channel I Super Star 2006.<br> Client Name: Unilever Bangladesh Limited</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>	                          
+                        </div>
+
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="card">
@@ -76,9 +123,9 @@
                             </div>
                         </div>						
                     </div>
-                    <div class="portfolio-footer">
-                        <button onclick="goToIndex()" class="btn btn-work btn-sm">Back To Home</button>
-                    </div>
+                    <!-- <div class="portfolio-footer">
+                        
+                    </div> -->
 				</div>
 			</div>
 		</section>
@@ -90,10 +137,35 @@
 	<script src="js/utils.js"></script>
 	<script src="js/index.js"></script>
     <script src="js/video.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script>
         function goToIndex(){
 			document.location.href = "index.html";
-		}
+        }
+        
+        // init Isotope
+        var $grid = $('.grid').isotope({
+            itemSelector: '.element-item',
+            layoutMode: 'fitRows',
+            getSortData: {
+                name: '.name',
+                symbol: '.symbol',
+                number: '.number parseInt',
+                category: '[data-category]',
+                weight: function( itemElem ) {
+                var weight = $( itemElem ).find('.weight').text();
+                return parseFloat( weight.replace( /[\(\)]/g, '') );
+                }
+            }
+        });
+
+        // bind filter button click
+        $('#filters').on( 'click', 'button', function() {
+            var filterValue = $( this ).attr('data-filter');
+            // use filterFn if matches value
+            filterValue = filterFns[ filterValue ] || filterValue;
+            $grid.isotope({ filter: filterValue });
+        });
     </script>
 
 	</body>
