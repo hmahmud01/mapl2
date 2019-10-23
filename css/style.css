@@ -40,19 +40,19 @@ section:nth-child(2) .text {
 }
 
 section:nth-child(3) .text {
-    background-color: #9b59b6
+    /* background-color: #9b59b6 */
 }
 
 section:nth-child(4) .text {
-    background-color: #f1c40f
+    /* background-color: #f1c40f */
 }
 
 section:nth-child(5) .text {
-    background-color: #e67e22
+    /* background-color: #e67e22 */
 }
 
 section:nth-child(6) .text {
-    background-color: #e74c3c
+    /* background-color: #e74c3c */
 }
 
 .bg-home {
@@ -576,3 +576,247 @@ input {
     border-left: 3px solid rgb(102, 157, 221);
     height: 375px;
   }
+
+.contact-form{
+    height: 570px;
+}
+
+
+@media (min-width: 340px) and (max-width: 480px) {
+    .title-mob {
+        font-size: 1.5rem;
+    }
+
+    .invis {
+        visibility: hidden;        
+    }
+
+    .underline{
+        visibility: hidden;
+    }
+
+    .home-content {
+        width: 100%;        
+        margin: 0;
+        padding: 0 15px;
+        color:white;
+        text-align: center;
+    }
+
+    .story-content{    
+        margin: 10px 5px 0 5px;
+        padding: 5px;
+    }
+    
+    .story-para{
+        padding-top: 40px;
+        text-align: justify
+    }
+
+    .video-back{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* animation: animateBg forwards 15s ease-in; */
+    }
+
+    .video {
+        background-color: rgba(87, 71, 71, 0.15);
+        width: 340px;
+        height: 320px;
+        box-shadow: 0 0 10px rgb(100, 95, 95);
+        border: 3px solid rgb(100, 3, 100);
+    }
+
+    .expert{
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        margin: 30px 20px;
+        justify-content: right;
+        align-items: center;
+        width: 95%;
+    }
+
+    .brand {
+        font-size: 2rem;
+        width: 340px;
+    }
+
+    /* .brand-b1 {
+        position: absolute;
+        top: 2%;
+        background-color: rgba(187, 187, 187, 0.15);
+        width: 480px;
+        height: 420px;
+        box-shadow: 0 0 10px gray;
+        
+    }
+    
+    .brand-b2 {
+        position: relative;
+        background-color: white;
+        width: 440px;
+        height: 400px;
+        margin: 20px 200px;
+        text-align: center;
+        padding: 60px 0;
+        box-shadow: 0 0 20px gray;
+    } */
+
+
+    .line-odd {
+        font-size: 3rem;
+    }
+    
+    .line-even {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+
+    .brand-space{
+        margin-top: 40px;
+    }
+
+    .form-text{
+        font-size: 12px;
+        padding: 5px;
+        margin: 13px 10px;
+        width: 100%;
+        margin-top: -150px;
+    }
+    
+    .btn-circle.btn-xl {
+        width: 68px;
+        height: 68px;
+        padding: 0;
+        border-radius: 149px;
+        font-size: 8px;
+        /* line-height: 1.33; */
+        /* text-align: center; */
+        margin-left: 40%;
+    }
+
+    .vertical-line {
+        visibility: hidden;
+      }
+
+    .mob-margin{
+        margin-top: -150px;
+    }
+    
+    .btn-circle {
+        width: 30px;
+        height: 30px;
+        padding: 6px 0px;
+        border-radius: 15px;
+        /* text-align: center; */
+        font-size: 12px;
+        line-height: 1.42857;
+    }
+    
+    .btn-schedule {    
+        color: rgba(8, 8, 90, 0.829);
+        background-color: #fff;
+        border-color: rgba(8, 8, 90, 0.829)
+    }
+    
+    .btn-schedule:hover {
+        color: #fff;
+        background-color: rgba(8, 8, 90, 0.829);
+        border-color: #fff;
+    }
+
+    .btn-bot{
+        margin-bottom: 50px;
+    }
+
+    .form-margin {
+        margin: 50px 10px;
+    }
+
+    .border-1 {
+        top: -10%;
+        left: -10%;
+    }
+
+    .address-space{
+        margin: 50px;
+    }
+
+    .footer-pad {
+        margin-top: 50px;
+        padding: 10px;
+    }
+    .mob-color{
+        color: black;
+        margin-left: 10%;
+    }
+
+    .list-area {
+        margin-left: 14%;
+        height: 80%;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        outline: black;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-size: 100%, 100%;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+
+    .logo-size {
+        height: 32px;
+        margin: 4px;
+    }
+
+    .portfolio-head{
+        float: left;
+        margin: 10px 30px;
+        width: 100%;
+        padding-top: 50px;
+    }
+    
+    .portfolio-content{
+        width: 100%;
+        padding-top: 220px;
+    }
+
+    .anchors{
+        visibility: collapse;
+    }
+}
+
+/* For Widescree Display */
+@media (min-width: 740px) and (max-width: 812px) {
+    .video {
+        background-color: rgba(87, 71, 71, 0.15);
+        width: 580px;
+        height: 180px;
+        box-shadow: 0 0 10px rgb(100, 95, 95);
+        border: 4px solid rgb(100, 3, 100);
+    }
+
+    .expert{
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        margin: 30px 20px;
+        justify-content: right;
+        align-items: center;
+        width: 95%;
+    }
+
+    .home-content {
+        width: 90%;        
+        margin: 0;
+        padding: 0 15px;
+        color:white;        
+    }
+
+    .brand {
+        font-size: 2rem;
+    }
+
+}
