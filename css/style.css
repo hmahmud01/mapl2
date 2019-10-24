@@ -287,7 +287,7 @@ nav ul li:hover a span {
 }
 
 .story-para{
-    padding-top: 130px;
+    padding-top: 100px;
     text-align: justify
 }
 
@@ -818,5 +818,10 @@ input {
     .brand {
         font-size: 2rem;
     }
+}
 
+@media (max-width: 1600) and (max-width: 1920){
+    .btn-bot {
+        margin-bottom: 50px;
+    }
 }
