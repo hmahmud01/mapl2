@@ -583,7 +583,7 @@ input {
 
 .btn-bot {
     margin-bottom: 50px;
-    height: 345px;
+    /* height: 345px; */
 }
 
 
@@ -740,7 +740,7 @@ input {
 
     .btn-bot{
         margin-bottom: 50px;        
-        height: 0;
+        /* height: 0; */
     }
 
     .form-margin {
@@ -833,7 +833,7 @@ input {
 
     .btn-bot{
         margin-bottom: 50px;        
-        height: 0;
+        /* height: 0; */
     }
 }
 
