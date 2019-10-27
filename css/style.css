@@ -481,6 +481,11 @@ input {
     height: 50px;
 }
 
+.modal-img{
+    background-position: center;
+    height: 90px;
+}
+
 .hex-content {
     position: relative;
     /* left: 30%; */
