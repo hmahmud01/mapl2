@@ -1,0 +1,21 @@
+.logo-height {
+    margin: 13px;
+    height: 38px;
+}
+
+.mix {
+    margin: 5px 0;
+}
+
+.port-head {
+    margin: 28px auto;
+    padding: 72px 0;
+}
+
+@media (min-width: 340px) and (max-width: 480px) {
+    .port-head {
+        margin: 28px auto;
+        padding: 32px 0;
+        text-align: center;
+    }
+}
