@@ -581,6 +581,11 @@ input {
     height: 570px;
 }
 
+.btn-bot {
+    margin-bottom: 50px;
+    height: 345px;
+}
+
 
 @media (min-width: 340px) and (max-width: 480px) {
     .service-img {
@@ -734,7 +739,8 @@ input {
     }
 
     .btn-bot{
-        margin-bottom: 50px;
+        margin-bottom: 50px;        
+        height: 0;
     }
 
     .form-margin {
@@ -752,7 +758,7 @@ input {
 
     .footer-pad {
         margin-top: 50px;
-        padding: 10px;
+        padding: 90px 10px;
     }
     .mob-color{
         color: black;
@@ -824,10 +830,16 @@ input {
     .brand {
         font-size: 2rem;
     }
+
+    .btn-bot{
+        margin-bottom: 50px;        
+        height: 0;
+    }
 }
 
-@media (max-width: 1600) and (max-width: 1920){
+@media (min-width: 1800) and (max-width: 2220){
     .btn-bot {
         margin-bottom: 50px;
+        height: 345px;
     }
 }
