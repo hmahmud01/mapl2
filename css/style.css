@@ -466,18 +466,18 @@ input {
     position: absolute;
     top: 3%;
     left: 3%;
-    margin: 30px 20px;
+    margin: 30px 0 30px 30px;
     justify-content: right;
     align-items: center;
-    width: 95%;
+    width: 90%;
 }
 
 .clients-content {
-    margin-left: -150px;
-    padding: 30px 50px;
+    /* margin-left: -150px; */
+    /* padding: 30px 50px; */
 }
 .content{
-    padding: 0 50px 0 100px;
+    padding: 0 100px 0 100px;
 }
 
 .service-img {
@@ -491,18 +491,19 @@ input {
 }
 
 .hex-content {
-    position: relative;
+    /* position: relative; */
     /* left: 30%; */
-    width: 65%;
+    /* width: 65%; */
+    margin-left: 10%;
 }
 
 
 /* clients page style */
 .clients {
     position: absolute;
-    width: 100%;
+    /* width: 100%; */
     top: 3%;
-    left: 5%;
+    /* left: 5%; */
     margin: 30px 20px;
     color: white;
 }
@@ -696,11 +697,18 @@ input {
     .expert{
         position: absolute;
         top: 3%;
-        left: 3%;
+        left: 0;
         margin: 30px 20px;
         justify-content: right;
         align-items: center;
-        width: 95%;
+        /* width: 95%; */
+    }
+
+    .hex-content {
+        /* position: relative; */
+        /* left: 30%; */
+        /* width: 65%; */
+        margin-left: 0;
     }
 
     .brand {
@@ -795,12 +803,28 @@ input {
     .btn-bot{
         /* margin-bottom: 50px;         */
         /* height: 0; */
-        margin-top: 60px;
+        margin: 60px 0 30px 0;
+    }
+
+    .footer-row{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .footer-col-md-12{
+        position: relative;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .form-margin {
         /* margin: 50px 10px; */
-        margin: 0px 10px;
+        margin: 0px 20px;
         position: relative;
         top: 10%;
         margin-top: 210px;
@@ -821,12 +845,13 @@ input {
     }
     .mob-color{
         color: black;
-        margin-left: 10%;
+        /* margin-left: 10%; */
+        text-align: center;
     }
 
     .list-area {
-        margin-left: 14%;
-        height: 80%;
+        /* margin-left: 14%;
+        height: 80%; */
     }
 
     /* .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -873,10 +898,10 @@ input {
         position: absolute;
         top: 3%;
         left: 3%;
-        margin: 30px 20px;
+        margin: 30px 0 30px 30px;;
         justify-content: right;
         align-items: center;
-        width: 95%;
+        width: 90%;
     }
 
     .home-content {
